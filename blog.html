@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="blog_.css" rel="stylesheet" />
+    <link href="contact_.css" rel="stylesheet" />
+    <title>Blog - NOMADIC</title>
+  </head>
+  <body>
+    <script id="replace_with_navbar" src="nav.js"></script>
+    <div class="main" ng-controller="myCtrl">
+      <div class="card" ng-repeat="blog in blogs">
+        <div class="card__header">
+          <img src="blog1.jpeg" alt="card__image" class="card__image" width="600" />
+        </div>
+        <div class="card__body">
+          <span class="tag tag-blue">{{ blog.category }}</span>
+          <h4>{{ blog.title }}</h4>
+          <p>{{ blog.content }}</p>
+        </div>
+        <div class="card__footer">
+          <div class="user">
+            <img src="{{ blog.userImage }}" alt="user__image" class="user__image" />
+            <div class="user__info">
+              <h5>{{ blog.username }}</h5>
+              <small>{{ blog.timestamp }}</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script id="replace_with_footer" src="footer.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script>
+      var app = angular.module("myApp", []);
+
+      app.controller("myCtrl", function ($scope) {
+        $scope.blogs = [
+          {
+            category: "Travel Hacks",
+            title: "Easy Travel Hacks",
+            content:
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!",
+            username: "Ammar A",
+            userImage: "https://i.pravatar.cc/40?img=3",
+            timestamp: "3h ago",
+          },
+          {
+            category: "Another Escape",
+            title: "Delicious Food",
+            content:
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!",
+            username: "Om Sawamt",
+            userImage: "https://i.pravatar.cc/40?img=2",
+            timestamp: "Yesterday",
+          },
+          {
+            category: "Must Visits",
+            title: "Race to your heart content",
+            content:
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!",
+            username: "Bhoomi",
+            userImage: "https://i.pravatar.cc/40?img=1",
+            timestamp: "2d ago",
+          },
+        ];
+      });
+    </script>
+  </body>
+</html>

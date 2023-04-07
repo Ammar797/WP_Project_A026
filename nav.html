@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="nav.css" rel="stylesheet">
+        <script src="nav.js"></script>
+    </head>
+    <body>
+        <nav>
+            <ul class="company">
+                <li style="font-size: large;" class="logo"><a href="index.html"><div class="img"><img src="navimg.png"></div>NOMADIC</a></li>
+            </ul>
+            <ul>
+                <li style="font-size: large;"><a href="About.html">ABOUT</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropbtn" style="font-size: large;">TOURS</a>
+                  <div class="dropdown-content">
+                    <a href="tours.html">Domestic</a>
+                    <a href="international.html">International</a>
+                  </div>
+                </li>                
+                <li style="font-size: large;"><a href="blog.html">BLOG</a></li>
+                <li style="font-size: large;"><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="container">
+                <button class="log" tyle="font-size: medium;" class="open-button2" onclick="openForm2()">Sign up</button>
+                <button class="reg" style="font-size: medium;" class="open-button" onclick="openForm()">login</button>
+        </nav> 
+        
+        <div class="form-popup" id="myForm">
+          <!-- <div class="main"> -->
+          <form  class="form-container">
+            <h1 align="center">Login</h1>
+        
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+        
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+      <!-- </div> -->
+
+        <div class="form-popup" id="myForm2">
+          <!-- <div class="main"> -->
+          <form  class="form-container">
+            <h1 align="center">Sign up</h1>
+
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter username" name="username" required>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+        
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm2()">Close</button>
+          </form>
+        </div>
+      <!-- </div> -->
+    </body>
+</html>

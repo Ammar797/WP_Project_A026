@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans' , sans-serif;
+}
+
+.homepage{
+    height:100vh;
+    width: 100%;
+    background-image: url(https://images.pexels.com/photos/552785/pexels-photo-552785.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20px;
+}
+
+.logo{
+    color: rgb(83, 59, 59);
+    font-size: 28px;  
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    color: #1f554e;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+nav ul li a:hover{
+    color:rgb(235, 190, 100);
+    transition: .3s;
+}
+
+.reg, .log {
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 600;
+    margin: 0 10px;
+    width: 100px;
+    padding: 10px 0;
+    transition: 0.4s;
+    color: white;
+    background-color: rgb(124, 81, 81);
+}
+
+.reg:hover , log:hover{
+    color: white;
+    width:105px;
+    box-shadow: 0 0 20px rgb(190, 68, 68);
+    background-color: rgba(117, 49, 49, 0.978);
+}
+
+.log {
+    color: rgb(137, 91, 91);
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(117, 49, 49, 0.978);
+  }
+
+.Home{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+    padding-right: 500px;
+    align-items: center;
+    font-size: 25px;
+}
+.Home h1{
+    font-size: 40px;
+    color: #BAD1C2; 
+}
+.Home h2{
+    font-size: 80px;
+    color: #83cb93; 
+}
+.Home div{
+    color: #F6F6C9;
+}
+.expbutton{
+    padding: 20px;
+}
+
+.Discover{
+    background-color: #153462;
+    border-radius: 50px;
+    width: 260px;
+    height: 8vh;
+    font-size: x-large;
+    text-align: left;
+    color: #83cb93 ;
+}
+
+.Discover:hover{
+    background-color: #BAD1C2;
+    width: 280px;  
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    justify-content: center;
+    align-items: center;
+    padding-top: 180px;
+    height: 100vh;
+    width: 100vw;
+    background-color: #00000055;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    width: 400px;
+    padding: 10px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #000;
+    max-width: 90%;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover, .open-button2:hover {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+

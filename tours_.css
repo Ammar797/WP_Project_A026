@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    scroll-margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans' , sans-serif;
+}
+.main{
+  height: 115vh;
+  width: 100vw;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.up{
+    display: inline-flex;
+    width: 80vw;
+    height: 60vh;
+}
+.down{
+    display: inline-flex;
+    width: 80vw;
+    height: 50vh;
+}
+.cards{
+    width: 18vw;
+    height:48vh ;
+    background-color:rgb(255, 255, 255);
+    margin: auto;
+    border: 1px solid rgba(124, 120, 120, 0.64);
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+.card-img{
+   background-color: rgb(155, 255, 127);
+   height: 220px;
+   background-size: cover;
+   border-radius: 15px 15px 0 0;
+   margin-bottom: 10px;
+}
+.card1{
+  background-image: url(london.jpeg);
+}
+.card2{
+  background-image: url(newyork.jpeg);
+}
+.card3{
+  background-image: url(georgia.jpeg);
+}
+.card4{
+  background-image: url(dubai.jpeg);
+}
+.card5{
+  background-image: url(Qatar.jpeg);
+}
+.card6{
+  background-image: url(turkey.jpeg);
+}
+
+.cards p{
+   padding: 10px;
+   text-align: center;
+}
+.cards h2{
+  padding: 10px;
+  text-align: center;
+  font-size: x-large;
+}
+.cards a{
+  background-color: black;
+  color: white;
+  padding: 10px 10px ;
+  display: block;
+  text-align: center;
+  margin: 10px 80px;
+  text-decoration: none;
+}
+
+.cards:hover {
+  background-color: #BAD1C2;
+  /* color: white; */
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 1s ease;
+}
+
+@media only screen and (max-width: 768px) {
+  .cards {
+    width: 48%;
+    margin: 1% 2%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .cards {
+    width: 100%;
+    margin: 1% 0;
+  }
+}
+

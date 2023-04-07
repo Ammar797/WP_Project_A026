@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="book.css" rel="stylesheet">
+	<script src="booking.js"></script>
+	
+    <title>Document</title>
+</head>
+<body>
+    <script id="replace_with_navbar" src="nav.js"></script>
+    <div class="container1">
+		<form class="bookform" name="contactForm" onclick="return validateForm()" method="post">
+			<h1>Tourism Booking Page</h1>
+		
+			<label for="full-name">Full Name:</label>
+			<input type="text" id="full-name" name="name" >
+			<div class="error" id="nameErr"></div>
+
+			<label for="email">Email Address:</label>
+			<input type="email" id="email" name="email">
+			<div class="error" id="emailErr"></div>
+
+
+			<label for="phone">Phone Number:</label>
+			<input type="text" id="phone" name="number" maxlength="10">
+			<div class="error" id="mobileErr"></div>
+
+			<label for="tour-package">Tour Package:</label>
+			<select id="tour-package" name="country">
+				<option value="Select">Select</option>
+				<option value="London">London</option>
+				<option value="Qatar">Qatar</option>
+				<option value="Turkey">Turkey</option>
+				<option value="Agra">Agra</option>
+				<option value="Shimla">Shimla</option>
+				<option value="Goa">Goa</option>
+			</select>
+			<div class="error" id="countryErr"></div>
+		
+			<label for="departure-date">Departure Date:</label>
+			<input type="date" id="departure-date" name="departure-date" >
+		
+			<label for="return-date">Return Date:</label>
+			<input type="date" id="return-date" name="return-date" >
+		
+			<label for="adults">Number of Adults:</label>
+			<input type="text" id="adults" name="adults" maxlength="1" >
+			<div class="error" id="adultsErr"></div>
+		
+			<label for="children">Number of Children:</label>
+			<input type="text" id="children" name="children">
+			<div class="error" id="childrenErr"></div>
+		
+			<label for="comments">Comments:</label>
+			<textarea id="comments" name="comments"></textarea>
+		
+			<label for="terms">
+				<input type="checkbox" id="terms"  name="terms" >
+				I agree to the terms and conditions
+
+				<div class="error" id="termsErr"></div>
+			</label>
+		 
+			<input type="submit" value="Submit Booking">
+			<!-- <button type="submit" class="button1" formaction="/payment">Pay Now</button>
+			<button class="button1" onclick="history.back()">Back</button> -->
+		</form>
+	</div>
+	<div class="documents">
+		<h2>Documents Required</h2>
+		<ul>
+			<li><span>Passport:</span> A valid passport is required for international travel.</li>
+			<li><span>Vaccinations:</span> Depending on your destination, some vaccinations may be required.Please consult your doctor or travel clinic.</li>
+		</ul>
+	</div>
+	<script id="replace_with_footer" src="footer.js"></script>
+</body>
+</html>

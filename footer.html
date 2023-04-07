@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="footer.css" rel="stylesheet">
+        <script src="footer.js"></script>
+        <link href="contact_.css" rel="stylesheet">
+    </head>
+    <body>
+        <Div Class="Footer">
+            <Div Class="Links">
+                <H3>Quick Links</H3>
+                <Ul>
+                    <Li>Offers & Discounts</Li>
+                    <Li>Get Coupon</Li>
+                    <Li>Contact Us</Li>
+                    <Li>About</Li>
+                </Ul>
+            </Div>
+            <Div Class="Links">
+                <H3>Tours</H3>
+                <Ul>
+                    <Li>London</Li>
+                    <Li>Gorgia</Li>
+                    <Li>New York</Li>
+                    <Li>Australia</Li>
+                </Ul>
+            </Div>
+            <Div Class="Links">
+                <H3>Support</H3>
+                <Ul>
+                    <Li align="center">Frequently Asked Questions</Li>
+                    <Li align="center">Report A Payment Issue</Li>
+                    <Li align="center">Terms & Conditions</Li>
+                    <Li align="center">Privacy Policy</Li>
+                </Ul>
+                <button class="admin" style="font-size: medium;" class="open-button3" onclick="openForm3()">Admin login</button>
+            </Div>
+        </Div>
+        <div class="form-popup" id="myForm3">
+            <form  class="form-container3">
+              <h1 align="center">Login</h1>
+          
+              <label><b>Admin ID</b></label>
+              <input type="text" placeholder="-ID-" name="ID" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit" class="btn">Login</button>
+              <button type="button" class="btn cancel" onclick="closeForm3()">Close</button>
+            </form>
+          </div>
+    </body>
+</html>

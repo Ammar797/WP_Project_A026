@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Home.css">
+    <link rel="icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="nav.js"></script>
+    <link href="contact_.css" rel="stylesheet">
+    <title>NOMADIC</title>
+</head>
+<body>
+    <div class="homepage">
+        <nav>
+            <div class="company">
+            <p align="center"><a href="index.html"><img class="navimg" src="new nav image.png" alt="???" ></a></p>
+            <h2 class="logo">Nomad<span>ic</span></h2>
+            </div>
+            <ul>
+                <li style="font-size: large;"><a href="About.html">ABOUT</a></li>
+                <li style="font-size: large;"><a href="tours.html">TOURS</a></li>
+                <li style="font-size: large;"><a href="Blog.html">BLOG</a></li>
+                <li style="font-size: large;"><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="container">
+                <button class="log" tyle="font-size: medium;" class="open-button2" onclick="openForm2()">Sign up</button>
+                <button class="reg" style="font-size: medium;" class="open-button" onclick="openForm()">login</button>
+            </div>
+        </nav>
+        <div class="Home" >
+            <div>
+            <h1 >Explore the beauty of nature</h1>
+            <h2><b>Discover the new you</b></h2>
+            <div >Lorem, doloremque magni magnam consequatur nam? <br>Aliquid tempora eaque officia? magni magnam consequatur nam?</div>
+            <div class="expbutton"><button class="Discover">
+                <span style="margin-left: 20px;">Discover</span>
+                <span class="icon" style="margin-left: 4em; border-radius: 50%;"><i class="fa-solid fa-arrow-right"></i></span>
+            </button></div>
+            </div>
+        </div>
+
+        <div class="form-popup" id="myForm">
+            <form  class="form-container">
+              <h1 align="center">Login</h1>
+          
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit" class="btn">Login</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
+  
+          <div class="form-popup" id="myForm2">
+            <form  class="form-container">
+              <h1 align="center">Sign UP</h1>
+
+              <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter username" name="username" required>
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit" class="btn">Login</button>
+              <button type="button" class="btn cancel" onclick="closeForm2()">Close</button>
+            </form>
+          </div>
+    </div>
+</body>
+</html>

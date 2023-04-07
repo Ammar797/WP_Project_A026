@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans' , sans-serif;
+}
+
+.Footer {
+    Background-Size: Cover;
+    Background-Repeat: No-Repeat;
+    Background-Position: Center;
+    Width: 100%;
+    Height: 400px;
+    Position: Relative;
+    Display: Flex;
+    Flex-Flow: Row Wrap;
+    Justify-Content: Center;
+    Align-Items: Center;
+  }
+  
+  .Footer::Before {
+    Position: Absolute;
+    Content: "";
+    Display: Block;
+    Background-Color: #153462;
+    Top: 0;
+    Left: 0;
+    Bottom: 0;
+    Right: 0;
+  }
+  
+  .Footer .Links {
+    Position: Relative;
+    Color: #Fff;
+    Flex: 1;
+    Display: Flex;
+    Flex-Flow: Column;
+    Justify-Content: Center;
+    Align-Items: Center;
+  }
+  
+  .Links Ul {
+    List-Style-Type: None;
+  }
+  
+  .Links H3 {
+    Font-Family: Barlow Condensed;
+    Font-Weight: Normal;
+    Font-Size: 23px;
+    Margin-Bottom: 15px;
+  }
+  
+  .Links Li {
+    Font-Family: Roboto;
+    Cursor: Pointer;
+    Padding: 15px 0;
+  }
+  
+  .Links Li:Hover {
+    Color: #Ffa801;
+  }
+
+.admin{
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 600;
+    margin: 0 10px;
+    width: 100px;
+    padding: 10px 0;
+    transition: 0.4s;
+}
+
+.admin{
+    color: white;
+    background-color: rgb(124, 187, 223);
+}
+
+.reg:hover{
+    color: white;
+    width:105px;
+    box-shadow: 0 0 20px rgb(190, 68, 68);
+    background-color: rgba(117, 49, 49, 0.978);
+}  
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  justify-content: center;
+  align-items: center;
+  padding-top: 180px;
+  height: 100vh;
+  width: 100vw;
+  background-color: #00000055;
+}
+
+
+.form-container3 {
+  width: 400px;
+  padding: 10px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container3 input[type=text], .form-container3 input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #000;
+  max-width: 90%;
+}
+
+.form-container3 input[type=text]:focus, .form-container3 input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container3 .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container3 .cancel {
+  background-color: red;
+}
+
+.form-container3 .btn:hover, .open-button3:hover, .open-button3:hover {
+  opacity: 1;
+}

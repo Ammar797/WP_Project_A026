@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans' , sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20px;
+    background-color: #F6F6C9;
+    position: sticky;
+}
+
+.logo{
+    color: rgb(116, 74, 74);
+    font-size: 30px; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    color: rgb(170, 132, 131);
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+nav ul li a:hover{
+    color:rgb(235, 190, 100);
+    transition: .3s;
+}
+
+.reg,.log{
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 600;
+    margin: 0 10px;
+    width: 100px;
+    padding: 10px 0;
+    transition: 0.4s;
+}
+
+.reg{
+    color: white;
+    background-color: rgb(124, 81, 81);
+}
+
+.reg:hover{
+    color: white;
+    width:105px;
+    box-shadow: 0 0 20px rgb(190, 68, 68);
+    background-color: rgba(117, 49, 49, 0.978);
+} 
+
+.log {
+    color: rgb(137, 91, 91);
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(117, 49, 49, 0.978);
+  }
+
+
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    justify-content: center;
+    align-items: center;
+    padding-top: 180px;
+    height: 100vh;
+    width: 100vw;
+    background-color: #00000055;
+  }
+  
+
+  .form-container {
+    width: 400px;
+    padding: 10px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #000;
+    max-width: 90%;
+  }
+  
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+.form-container .btn:hover, .open-button:hover, .open-button2:hover {
+    opacity: 1;
+}
+
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #fffbfb}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
